@@ -13,6 +13,8 @@ export default function Participants() {
   const [ParticipantEditing, setParticipantEditing] = React.useState<any>(null);
   const [sorted, setSorted] = React.useState<string>();
 
+
+  //////////////// UNCOMMENT TO TAVE IN LOCAL STORAGE /////////////////
   // /**
   //  * getting data from local storage
   //  */
@@ -31,6 +33,7 @@ export default function Participants() {
   //   const json = JSON.stringify(Participants);
   //   localStorage.setItem("Participants", json);
   // }, [Participants]);
+  /////////////////////////////////////////////////////////
 
   /**
    * Function deleteParticipant(id)
