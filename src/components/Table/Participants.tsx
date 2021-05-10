@@ -4,8 +4,6 @@ import { IParticipant } from '../../utils/interfaces';
 import { Data } from '../../utils/Data'
 import Editing from './Edit/Editing'
 import Adding from './Add/Adding'
-// import { FaTrash } from "react-icons/fa";
-// import { RiPencilFill } from "react-icons/ri";
 import NavBar from '../Layout/NavBar';
 import BodyTable from './BodyTable';
 
@@ -15,24 +13,24 @@ export default function Participants() {
   const [ParticipantEditing, setParticipantEditing] = React.useState<any>(null);
   const [sorted, setSorted] = React.useState<string>();
 
-  /**
-   * getting data from local storage
-   */
-  React.useEffect(() => {
-    const json: any = localStorage.getItem("Participants");
-    const loadedParticipants = JSON.parse(json);
-    if (loadedParticipants) {
-      setParticipants(loadedParticipants);
-    }
-  }, []);
+  // /**
+  //  * getting data from local storage
+  //  */
+  // React.useEffect(() => {
+  //   const json: any = localStorage.getItem("Participants");
+  //   const loadedParticipants = JSON.parse(json);
+  //   if (loadedParticipants) {
+  //     setParticipants(loadedParticipants);
+  //   }
+  // }, []);
 
-  /**
-   * set data in local storage
-   */
-  React.useEffect(() => {
-    const json = JSON.stringify(Participants);
-    localStorage.setItem("Participants", json);
-  }, [Participants]);
+  // /**
+  //  * set data in local storage
+  //  */
+  // React.useEffect(() => {
+  //   const json = JSON.stringify(Participants);
+  //   localStorage.setItem("Participants", json);
+  // }, [Participants]);
 
   /**
    * Function deleteParticipant(id)
@@ -55,8 +53,10 @@ export default function Participants() {
 
     function compareBy(key: any) {
       return function (a: string, b: string) {
-        if (a[key].toLocaleLowerCase() < b[key].toLocaleLowerCase()) return -1;
-        if (a[key].toLocaleLowerCase() > b[key].toLocaleLowerCase()) return 1;
+        if(a && b) {
+          if (a[key] < b[key]) return -1;
+          if (a[key] > b[key]) return 1;
+        }
         return 0;
       };
     }
