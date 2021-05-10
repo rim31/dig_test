@@ -36,7 +36,7 @@ export default function Login() {
    */
   const onSubmit = (data: any) => {
     if (checkData(data) === true) {
-      history.push("/participants");
+      history.push("/dig_test/participants");
     } else {
       setShowError(false);
     }
