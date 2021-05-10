@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Login} />
-        <Route path="/participants" component={Participants} />
+        <Route exact path="/dig_test/" component={Login} />
+        <Route path="/dig_test/participants" component={Participants} />
       </Switch>
     </Router>
   );

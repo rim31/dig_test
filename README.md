@@ -10,8 +10,12 @@ cd ...
 yarn install
 yarn start
 ```
-localhost:3000/
 
+
+localhost:3000/dig_test/
+
+- deployment : 
+https://rim31.github.io/dig_test/
 
 ![](1d.png)
 ![](2d.png)
@@ -59,7 +63,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000/dig_test/](http://localhost:3000/dig_test/) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
