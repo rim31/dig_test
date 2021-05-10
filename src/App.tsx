@@ -9,9 +9,14 @@ function App() {
       <Switch>
         <Route exact path="/dig_test/" component={Login} />
         <Route path="/dig_test/participants" component={Participants} />
+        <Route path={'*'} ><NotFound /></Route>
       </Switch>
     </Router>
   );
 }
-
+function NotFound() {
+  return (
+    <h1>Page Not Found</h1>
+  )
+}
 export default App;
