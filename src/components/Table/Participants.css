@@ -1,0 +1,196 @@
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+  color: #505050;
+  background-color: #c7c2c2;
+}
+/* form {
+  margin: 0px;
+} */
+
+input {
+  height: 37px;
+  border: 0.1px solid grey;
+  margin-left: 16px;
+  /* margin-top:  16px; */
+  background-color: white;
+  line-height: 400;
+  font-size: 16px;
+}
+button {
+  height: 40px;
+}
+
+.page {
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  max-width: 912px;
+  box-sizing: border-box;
+  top: 0px;
+  left: 0px;
+}
+
+.tableContainer {
+  width: 100%;
+  max-width: 912px;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+#participantTable {
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  height: 30.5px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 16px;
+  padding-top: 16px;
+  color: #757575;
+  font-weight: bold;
+  /* font-weight: 500!important; */
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  /* margin-bottom: 1px; */
+}
+
+thead button.ascending::after {
+  content: '↓';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '↑';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  border-bottom: 0.1px solid #ccc;
+  margin-bottom: 24px!important;
+  max-height: 71.5px;
+  padding: 0px 0px;
+}
+
+td {
+  height: 71.5px;
+}
+
+.myInput {
+  background-color: whitesmoke;
+}
+
+.cellName {
+  min-width: 150px;
+  padding-left: 24px!important;
+}
+.cellEmail {
+  min-width: 280px;
+  padding-left: 24px!important;
+}
+.cellPhone{
+  max-width: 120px;
+  padding-left: 24px!important;
+}
+
+
+
+.icon-only {
+  /* min-width: 200px; */
+  max-width: 158px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+/* //////////////// AddNew Component //////////// */
+
+#Adding {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  background-color: #FEFEFE;
+  margin-bottom: 10px;
+  max-height: 40px;
+}
+
+/* //////////////// Editing Component //////////// */
+#editParticipant {
+  display: flex;
+  max-width: 192px;
+  float: left;
+  margin: 16px 16px;
+}
+
+
+.myButton {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color:#909090;
+  height: 24px;
+  width: 24px;;
+  margin-left: 16px;
+}
+
+.cancelButton {
+  color: #07f;
+  background-color: #dad5d5;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  border: 0px solid transparent;
+  margin-right: 2px;
+}
+.saveButton {
+  color: #ffffff;
+  background-color: #07f;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  border: 0px solid transparent;
+  margin-left: 2px;
+}
+
+.addButton {
+  color: grey;
+  background-color: #ddd;
+  font-size: 16px;
+  /* font-weight: 500!important; */
+  font-weight: bold;
+  height: 40px;
+  border: 1px solid grey;
+  margin-right: 2px;
+  justify-content: right;
+  margin-right: 16px;
+  font-weight: 500;
+  border: 0px solid transparent;
+  float: right;
+  padding-top: 1px;
+}
+
+.cellAction {
+  width: 158px!important;
+}
